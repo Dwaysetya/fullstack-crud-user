@@ -25,7 +25,6 @@ export const useUsers = () => {
     queryFn: async () => {
       //get token from cookies
       const token = Cookies.get("token");
-      console.log("Token dari cookie:", token);
 
       //get users from api
       const response = await Api.get("/api/users", {
